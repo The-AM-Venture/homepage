@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /** Base colors */
+--color-dark-a0: #00000;
+--color-light-a0: #ffffff;
+
+/* Theme primary colors - --color-primary-a0: #30bced; is my main primary color */
+--color-primary-a0: #30bced;
+--color-primary-a10: #58c3ef;
+--color-primary-a20: #74cbf1;
+--color-primary-a30: #8cd2f3;
+--color-primary-a40: #a1daf5;
+--color-primary-a50: #b5e1f7;
+
+/** Theme surface colors  --color-surface-tonal-a0: #1d242b; is my main surface black*/
+--color-surface-a0: #16161a;
+--color-surface-a10: #2b2b2f;
+--color-surface-a20: #424245;
+--color-surface-a30: #5a5a5d;
+--color-surface-a40: #737376;
+--color-surface-a50: #8d8d90;
+
+/** Theme tonal surface colors */
+--color-surface-tonal-a0: #1d242b;
+--color-surface-tonal-a10: #32383f;
+--color-surface-tonal-a20: #484e54;
+--color-surface-tonal-a30: #60656b;
+--color-surface-tonal-a40: #787d82;
+--color-surface-tonal-a50: #929599;
+
+/** Success colors */
+--color-success-a0: #22946e;
+--color-success-a10: #47d5a6;
+--color-success-a20: #9ae8ce;
+
+/** Warning colors */
+--color-warning-a0: #a87a2a;
+--color-warning-a10: #d7ac61;
+--color-warning-a20: #ecd7b2;
+
+/** Danger colors */
+--color-danger-a0: #9c2121;
+--color-danger-a10: #d94a4a;
+--color-danger-a20: #eb9e9e;
+
+/** Info colors */
+--color-info-a0: #21498a;
+--color-info-a10: #4077d1;
+--color-info-a20: #92b2e5;
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color:#16161a;
+  color:#b5e1f7;
 }
