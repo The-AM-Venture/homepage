@@ -25,15 +25,15 @@ export default function Nav() {
   const [projectsCollapse, setProjectsCollapse] = useState(false);
   return (
     <>
-    <nav className='relative text-light-a0 flex flex-row justify-between items=center h-full w-auto px-5'>
-        <div className="rounded-full flex lg:w-[5%] w-[15%]">
+    <nav className='relative text-light-a0 flex flex-row justify-between items-center h-full w-auto px-5'>
+        <div className="rounded-full flex lg:w-[5%] md:w-[15%] w-[20%]">
             <img className="w-100" src="https://bucket.theamventure.com/Logo/amv/logo.png" />
         </div>
         <div className='lg:flex flex-row m-auto hidden'>
             
                 {
                     links.map((link,i) => 
-                    <Link className='flex flex-row' href={link.link} target="_blank" rel="noopener noreferrer">
+                    <Link  key={i} className='flex flex-row' href={link.link} target="_blank" rel="noopener noreferrer">
                         <p className="font-bold text-lg px-3 my-auto">{link.name}</p>
                     </Link >
                     )
@@ -68,19 +68,19 @@ export default function Nav() {
       
     {/* Mobile view */}
         <Lineicons onClick={() => setNavCollapse(navCollapse === true ? false : true)} className="ml-auto nav-collapse lg:hidden" icon={MenuHamburger1Duotone} size={40} strokeWidth={2} />
-        <div className={ navCollapse ? 'absolute flex flex-row items-center p-5 w-full' : "hidden"} >
-            <div className=' z-40 flex flex-col w-[80%]'>
+        <div className={ navCollapse ? 'absolute inset-y-0 left-0 inset-y-0 right-0 flex flex-row items-center w-full md:mt-[10%] mt-[40%] animate-spine' : "hidden"} >
+            <div className='flex flex-col mx-auto w-[80%]'>
                 <div className={navCollapse ? "flex flex-col bg-surface-a10 text-light-a0 mt-8 visible  border-black border-3" : "hidden"}>
                     {
                     links.map((link,i) => 
-                    <Link className='flex flex-row' href={link.link} target="_blank" rel="noopener noreferrer">
+                    <Link key={i} className='flex flex-row' href={link.link} target="_blank" rel="noopener noreferrer">
                         <p className="font-bold text-lg px-3 my-auto">{link.name}</p>
                     </Link >
                     )
                     }
                 </div>
 
-                <Link className='flex flex-row bg-primary-a0 hover:bg-surface-a0 text-white font-bold py-2 px-4 rounded my-auto mt-[2%]' href={"#"} target="_blank" rel="noopener noreferrer">
+                <Link className='flex flex-row bg-primary-a0 hover:bg-surface-a10 text-white font-bold py-2 px-4 rounded my-auto mt-[4%]' href={"#"} target="_blank" rel="noopener noreferrer">
                     <p className="font-bold text-lg">Contact</p>  
                 </Link >
 
