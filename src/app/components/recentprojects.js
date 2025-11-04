@@ -14,7 +14,7 @@ export default function Recentprojects() {
     <>
         <div className='mt-[10%] relative '>
             <h2 className='font-bold text-black lg:text-8xl md:text-7xl text-5xl text-shadow-lg/10 text-shadow-light-a0 text-center'>Recent Projects</h2>
-            <div className='grid grid-cols-3 gap-4 justify-center mt-[10%] mb-[40%] w-[90%] mx-auto'>
+            <div className='grid md:grid-cols-3 grid-cols-2 gap-4 justify-center mt-[10%] mb-[40%] w-[90%] mx-auto'>
                 {
                     links.map((link,i) =>
                         <Link key={i} className='flex flex-row' href={link.link} target="_blank" rel="noopener noreferrer">
