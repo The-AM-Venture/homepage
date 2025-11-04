@@ -67,3 +67,16 @@ body {
    height: 100vh;
    width: 100vw;
 }
+
+
+.triangles {
+  height:100vh;
+  background:
+    /* Right bottom triangle*/
+    linear-gradient(to bottom right,transparent 49.5%,#16161a 50%) bottom right,
+    /* left bottom triangle*/
+    linear-gradient(to bottom left ,transparent 49.5%,#16161a  50%) bottom left ,
+    transparent;
+  background-size:50% 20%; /* Width height*/
+  background-repeat:no-repeat;
+}

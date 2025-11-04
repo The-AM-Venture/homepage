@@ -18,6 +18,7 @@ export default function Home() {
           <Nav  />
         </div>
       </div>
+        <div className="relative triangles"></div>
     </>
   );
 }
