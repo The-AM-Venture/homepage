@@ -1,4 +1,5 @@
 import Nav from "./components/nav";
+import Recentprojects from "./components/recentprojects";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       </div>
         <div className="relative triangles"></div>
+      <Recentprojects />
     </>
   );
 }
