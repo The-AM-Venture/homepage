@@ -1,5 +1,7 @@
 import Nav from "./components/nav";
-import Recentprojects from "./components/recentprojects";
+import Recentprojects from "./components/recentprojects";import { Lineicons } from "@lineiconshq/react-lineicons";
+import { ChevronDownCircleDuotone } from "@lineiconshq/free-icons";
+
 
 export default function Home() {
   return (
@@ -10,8 +12,9 @@ export default function Home() {
           <div className="m-auto ">
             
             <p className="font-bold lg:text-5xl md:text-4xl text-2xl">Your Inovative and creative</p>
-            <h1 className="font-bold text-black lg:text-8xl md:text-7xl text-5xl text-shadow-lg/10 text-shadow-light-a0">Web Design Agency</h1>
-            <p className="inline-block text-2xl bg-primary-a0 hover:bg-surface-a10 text-white font-bold py-2 px-5 rounded mt-[5%]">Learn More</p>
+            <h1 className="font-bold text-black lg:text-8xl md:text-7xl text-5xl text-shadow-lg/10 text-shadow-light-a0">Web Designer & Developer</h1>
+            <p className="lg:text-4xl md:text-2xl text-xl mt-4">Designing, Developing, and Maintaing Your Online Presence</p>
+            <Lineicons className="block animate-bounce mx-auto text-primary-a0 mt-[20%]" icon={ChevronDownCircleDuotone} size={70} strokeWidth={2} />
 
           </div>
           </div>
