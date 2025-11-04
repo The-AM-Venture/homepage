@@ -25,7 +25,7 @@ export default function Nav() {
   const [projectsCollapse, setProjectsCollapse] = useState(false);
   return (
     <>
-    <nav className='relative text-light-a0 flex flex-row justify-between items-center h-full w-auto px-5'>
+    <nav className='relative text-light-a0 flex flex-row justify-between items-center h-20 w-auto px-5'>
         <div className="rounded-full flex lg:w-[5%] md:w-[15%] w-[20%]">
             <img className="w-100" src="https://bucket.theamventure.com/Logo/amv/logo.png" />
         </div>

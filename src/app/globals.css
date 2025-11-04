@@ -58,3 +58,12 @@ body {
   background-color:#16161a;
   color:#b5e1f7;
 }
+
+.landing-bg {
+  background-image: url('https://bucket.theamventure.com/kaleidico-26MJGnCM0Wc-unsplash(1).jpg');
+   background-size: cover;
+   background-position: center;
+   backdrop-filter: opacity(50%);
+   height: 100vh;
+   width: 100vw;
+}
