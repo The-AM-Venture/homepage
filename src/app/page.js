@@ -9,20 +9,20 @@ export default function Home() {
       <div className="relative">
         <img src='https://bucket.theamventure.com/kaleidico-26MJGnCM0Wc-unsplash(1).jpg'  className="absolute h-screen w-screen brightness-20"/>
         <div className="absolute text-white h-screen w-screen text-center items-center flex flex-col">
-          <div className="m-auto ">
-            
+          <div className="my-auto">
             <p className="font-bold lg:text-5xl md:text-4xl text-2xl">Your Inovative and creative</p>
             <h1 className="font-bold text-black lg:text-8xl md:text-7xl text-5xl text-shadow-lg/10 text-shadow-light-a0">Web Designer & Developer</h1>
             <p className="lg:text-4xl md:text-2xl text-xl mt-4">Designing, Developing, and Maintaing Your Online Presence</p>
-            <Lineicons className="block animate-bounce mx-auto text-primary-a0 mt-[20%]" icon={ChevronDownCircleDuotone} size={70} strokeWidth={2} />
-
           </div>
-          </div>
-        <div className="absolute w-full">
+        </div>
+        
+        <div className="absolute z-40 w-full">
           <Nav  />
         </div>
-      </div>
+        <Lineicons className="absolute bottom-0 left-0 animate-bounce w-full mx-auto md:mb-[10%] mb-[5%] text-primary-a0" icon={ChevronDownCircleDuotone} size={70} strokeWidth={2} />
         <div className="relative triangles"></div>
+      </div>
+        
       <Recentprojects />
     </>
   );
