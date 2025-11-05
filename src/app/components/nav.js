@@ -51,7 +51,7 @@ export default function Nav() {
                                         <li className='px-4 py-2' key={i} >
                                             <div className='items-center'>
                                                 <Link className='flex flex-row' href={link.link} target="_blank" rel="noopener noreferrer">
-                                                    <Lineicons icon={link.icon} size={20} strokeWidth={2} />
+                                                    <Lineicons className="text-primary-a0" icon={link.icon} size={20} strokeWidth={2} />
                                                     <p className="ml-1 text-lg">{link.name}</p>
                                                 </Link >
                                             </div>
