@@ -6,7 +6,7 @@ import { ChevronDownCircleDuotone } from "@lineiconshq/free-icons";
 export default function Home() {
   return (
     <>
-      <div className="relative">
+      <div className="relative h-full w-full">
         <img src='https://bucket.theamventure.com/kaleidico-26MJGnCM0Wc-unsplash(1).jpg'  className="absolute h-screen w-screen brightness-20"/>
         <div className="absolute text-white h-screen w-screen text-center items-center flex flex-col">
           <div className="my-auto">
