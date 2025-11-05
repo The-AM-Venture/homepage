@@ -77,13 +77,6 @@ body {
     /* left bottom triangle*/
     linear-gradient(to bottom left ,transparent 49.5%,#16161a  50%) bottom left ,
     transparent;
-  background-size:50% 30%; /* Width height*/
-  background-repeat:no-repeat;
-}
-
-@media (width >= 48rem) { 
-  .triangles {
   background-size:50% 20%; /* Width height*/
-}
-
+  background-repeat:no-repeat;
 }
