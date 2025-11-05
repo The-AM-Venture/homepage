@@ -19,7 +19,9 @@ export default function Home() {
         <div className="absolute z-40 w-full">
           <Nav  />
         </div>
-        <Lineicons className="absolute bottom-0 left-0 animate-bounce w-full mx-auto md:mb-[10%] mb-[5%] text-primary-a0" icon={ChevronDownCircleDuotone} size={70} strokeWidth={2} />
+        <div className="absolute bottom-0 left-0 md:h-90 h-80 w-full">
+        <Lineicons className="relative animate-bounce mx-auto text-primary-a0" icon={ChevronDownCircleDuotone} size={70} strokeWidth={2} />
+        </div>
         <div className="relative triangles"></div>
       </div>
         
