@@ -1,4 +1,5 @@
 import Nav from "./components/nav";
+import Services from "./components/services";
 import Recentprojects from "./components/recentprojects";import { Lineicons } from "@lineiconshq/react-lineicons";
 import { ChevronDownCircleDuotone } from "@lineiconshq/free-icons";
 
@@ -26,6 +27,7 @@ export default function Home() {
       </div>
         
       <Recentprojects />
+      <Services />
     </>
   );
 }
