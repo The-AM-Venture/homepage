@@ -1,6 +1,12 @@
 'use client'
 import Link from 'next/link'
 import React from 'react';
+const services = [
+  {service: 'Website Maintenance', description: 'Website service ongoing tasks such as updating content, fixing bugs, and ensuring security to keep a website running smoothly and up-to-date.', link: 'google.com'},
+  {service: 'Website Hosting', description: "Helping businesses' search engine rankings for enhanced online visibility.", link: 'google.com'},
+  {service: 'Consultation & Audits', description: 'Assisting you in determining the most suitable options for your needs through personalized one-on-one sessions.', link: 'google.com'}
+
+];
 
 export default function Services() {
   return (
@@ -24,14 +30,21 @@ export default function Services() {
                     </div>
                 </div>
 
-                <div className='flex flex-row justify-center'>
-                    <div className='flex flex-col rounded-xl h-[20em] w-[20em] bg-surface-a10 p-5'>
-                        <p className='text-2xl font-bold pb-3'>Website Maintenance</p>
-                        <p className='text-lg'>Website service ongoing tasks such as updating content, fixing bugs, and ensuring security to keep a website running smoothly and up-to-date.</p>
-                        <Link className='bg-primary-a0 hover:bg-surface-a0 text-white font-bold py-2 px-4 rounded mt-auto w-[40%] text-center' href={"#"} target="_blank" rel="noopener noreferrer">
-                            <p className="font-bold text-lg">Contact</p>  
-                        </Link >
-                    </div>
+                <h3 className='text-4xl font-bold mt-[5%] mb-[5%] md:ml-[25%]'>We can also help with,</h3>
+                <div className='flex flex-col md:flex-row justify-center mb-[5%]'>
+                    {
+                        services.map((service,i) =>
+                        <div className='flex flex-col card-effect mt-5 md:mt-0 rounded-xl h-[20em] w-[20em] bg-surface-a10 p-5 mx-auto md:mx-3'>
+                            <p className='text-2xl font-bold pb-3'>{service.service}</p>
+                            <p className='text-lg'>{service.description}</p>
+                            <Link className='bg-primary-a0 hover:bg-surface-a0 text-white font-bold py-2 px-4 rounded mt-auto w-[50%] text-center' href={service.link} target="_blank" rel="noopener noreferrer">
+                                <p className="font-bold text-lg">{service.link}</p>  
+                            </Link >
+                        </div>
+
+                        )
+
+                    }
                 </div>
         </section>
     </>
