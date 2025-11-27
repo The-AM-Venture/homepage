@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React from 'react';
 
 export default function Services() {
@@ -20,6 +21,16 @@ export default function Services() {
                     <div className='flex flex-col xl:w-[30%]'>
                         <p className='hidden md:block font-bold text-4xl sm:text-4xl md:text-5xl 2xl:text-6xl mb-[10%]'>Inovative Web Development </p>
                         <p className='text-lg sm:text-xl md:text-lg lg:text-3xl text-justify'>Behind every beautiful website is a robust framework. Our skilled developers are masters of their craft, employing the latest web technologies to bring your vision to life. Whether you need an e-commerce platform, a blog, or a dynamic corporate site, we have the expertise to deliver. Rest assured, your website will be responsive, secure, and optimized for search engines.</p>
+                    </div>
+                </div>
+
+                <div className='flex flex-row justify-center'>
+                    <div className='flex flex-col rounded-xl h-[20em] w-[20em] bg-surface-a10 p-5'>
+                        <p className='text-2xl font-bold pb-3'>Website Maintenance</p>
+                        <p className='text-lg'>Website service ongoing tasks such as updating content, fixing bugs, and ensuring security to keep a website running smoothly and up-to-date.</p>
+                        <Link className='bg-primary-a0 hover:bg-surface-a0 text-white font-bold py-2 px-4 rounded mt-auto w-[40%] text-center' href={"#"} target="_blank" rel="noopener noreferrer">
+                            <p className="font-bold text-lg">Contact</p>  
+                        </Link >
                     </div>
                 </div>
         </section>
