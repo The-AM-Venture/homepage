@@ -17,7 +17,7 @@ export default function Services() {
                 <div className='pt-5 flex flex-col md:flex-row justify-center mt-[5%]'>
                         <p className='md:hidden font-bold text-4xl sm:text-4xl md:text-5xl 2xl:text-6xl mb-[10%]'>Inovative Web Development </p>
                     <img className='rounded-xl w-[35em] mr-4 h-full' src="/software-engineer.svg" />
-                    <div className='flex flex-col w-[30%]'>
+                    <div className='flex flex-col xl:w-[30%]'>
                         <p className='hidden md:block font-bold text-4xl sm:text-4xl md:text-5xl 2xl:text-6xl mb-[10%]'>Inovative Web Development </p>
                         <p className='text-lg sm:text-xl md:text-lg lg:text-3xl text-justify'>Behind every beautiful website is a robust framework. Our skilled developers are masters of their craft, employing the latest web technologies to bring your vision to life. Whether you need an e-commerce platform, a blog, or a dynamic corporate site, we have the expertise to deliver. Rest assured, your website will be responsive, secure, and optimized for search engines.</p>
                     </div>
