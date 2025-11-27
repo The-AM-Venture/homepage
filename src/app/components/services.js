@@ -29,8 +29,8 @@ export default function Services() {
                         <p className='text-lg sm:text-xl md:text-lg lg:text-3xl text-justify'>Behind every beautiful website is a robust framework. Our skilled developers are masters of their craft, employing the latest web technologies to bring your vision to life. Whether you need an e-commerce platform, a blog, or a dynamic corporate site, we have the expertise to deliver. Rest assured, your website will be responsive, secure, and optimized for search engines.</p>
                     </div>
                 </div>
-
-                <h3 className='text-4xl font-bold mt-[5%] mb-[5%] md:ml-[25%]'>We can also help with,</h3>
+                <div className='flex flex-col mx-0 lg:mx-[20%]'>
+                <h3 className='text-4xl font-bold mt-[5%] mb-[5%]'>We can also help with,</h3>
                 <div className='flex flex-col md:flex-row justify-center mb-[5%]'>
                     {
                         services.map((service,i) =>
@@ -45,6 +45,8 @@ export default function Services() {
                         )
 
                     }
+                </div>
+
                 </div>
         </section>
     </>
