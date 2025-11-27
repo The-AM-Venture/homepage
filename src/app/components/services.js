@@ -4,7 +4,7 @@ import React from 'react';
 export default function Services() {
   return (
     <>
-        <section className='mx-5 md:mx-0'>
+        <section className='mx-5 md:mx-0 text-justify'>
             <h2 className='font-bold text-primary-a0 lg:text-8xl md:text-7xl text-5xl mb-[10%] text-shadow-lg/10 text-shadow-light-a0 text-center'>Services</h2>
                 <div className='pt-5 flex flex-col md:flex-row justify-center'>
                     <div className='flex flex-col xl:w-[30%] mr-4'>
